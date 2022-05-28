@@ -47,3 +47,33 @@ a:hover{
   padding:5px 05px;
   margin-top:08px;
 }
+
+.navbar_togleBtn{
+    display:none;    
+}
+
+@media screen and (max-width:768px) {
+    .navbar{
+        flex-direction: row;
+    }
+
+    header{
+        height:200px;
+    }
+    
+    .nav_menu  li{
+        display: none;
+    }
+
+    .navbar_togleBtn{
+      display: block;
+    }
+
+    .nav_sns i{
+        font-size:20px;
+        color:white;
+        padding:5px 05px;
+        margin-top:08px;
+      }
+
+}
