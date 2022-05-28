@@ -1,7 +1,3 @@
-const toggleBtn = document.querySelector('.navbar_togleBtn');
-const menu = document.querySelector('.nav_menu');
-const sns = document.querySelector('.nav_sns');
-
-toggleBtn.addEventListener('click', () => {
-    menu.classList.toggle('active');
-});
+document.querySelector('.navbar_togleBtn').addEventListener('click',function(){
+    document.querySelectorAll('.nav_menu')[0].classList.toggle('show');
+   });

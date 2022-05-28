@@ -52,6 +52,7 @@ a:hover{
     display:none;    
 }
 
+
 @media screen and (max-width:768px) {
     .navbar{
         flex-direction: row;
@@ -59,12 +60,27 @@ a:hover{
     }
 
     header{
-        height:200px;
+        height:250px;
     }
     
-    .nav_menu  li{
+    .nav_menu{
+        visibility: hidden;
+        overflow:hidden;
+        height:0px;
+        transition: all 1s;
+        flex-direction: column;
+        position:absolute;
+        background-color:rgb(190, 111, 111);
+        width: 50%;
+        height: 01px;
+        top:90%;
+        left:27.5%;
+        border-radius: 10px;
+    }
+    .nav_menu li{
         display: none;
     }
+
 
     .navbar_togleBtn{
       display: block;
@@ -80,7 +96,10 @@ a:hover{
         padding:5px 05px;
         margin-top:10px;
       }
-      .nav_menu.active{
-          display: flex;
-      }
+      
+
+      .show{
+        visibility: visible;
+        height:300px;
+    }
 }
