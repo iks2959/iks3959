@@ -31,7 +31,7 @@ header{
     padding-left:0px;
 }
 
-.nav_menu  li{
+.nav_menu li{
     padding:8px 12px;
     margin-top:10px;
 }
@@ -55,6 +55,7 @@ a:hover{
 @media screen and (max-width:768px) {
     .navbar{
         flex-direction: row;
+        position:relative;
     }
 
     header{
@@ -67,13 +68,19 @@ a:hover{
 
     .navbar_togleBtn{
       display: block;
+      position:absolute;
+      top:35%;
+      left:51%;
+      font-size:20px;
     }
 
     .nav_sns i{
         font-size:20px;
         color:white;
         padding:5px 05px;
-        margin-top:08px;
+        margin-top:10px;
       }
-
+      .nav_menu.active{
+          display: flex;
+      }
 }
