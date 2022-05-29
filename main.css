@@ -9,9 +9,8 @@ a {
 }
 header{
     width:100%;
-    height:600px;
-    border:1px solid black;
-    background-image: url('img/red-cutton.jpg');
+    height:100px;
+    background-color:rgb(172, 161, 163);
 }
 
 .navbar{
@@ -52,7 +51,34 @@ a:hover{
     display:none;    
 }
 
+.slide-container {
+    width: 300vw;
+    transition: all 1s;
+    position:relative;
+  }
+  .slide-box {
+    width: 100vw;
+    float: left;
+    
+  }
 
+  .slide-box img {
+    width: 100%;
+  } 
+
+  .left{
+    position:absolute;
+    top: 36%;
+    left: 5%;
+    font-size:30px;
+  }
+
+  .right{
+      position: absolute;
+      top:36%;
+      right:5%;
+      font-size: 30px;
+  }
 @media screen and (max-width:768px) {
     .navbar{
         flex-direction: row;
@@ -60,7 +86,7 @@ a:hover{
     }
 
     header{
-        height:200px;
+        height:80px;
     }
     
     .nav_menu{
@@ -76,6 +102,12 @@ a:hover{
         left:35%;
         border-radius: 10px;
     }
+    
+    .navbar .nav_logo img{
+        width:105px;
+        margin-bottom: 10px;
+      }
+
     .nav_menu li{
         display: none;
     }
@@ -87,11 +119,12 @@ a:hover{
         display: flex;
         color:black;
     }
-
+     
+    
     .navbar_togleBtn{
       display: block;
       position:absolute;
-      top:35%;
+      top:30%;
       left:51%;
       font-size:20px;
     }
@@ -100,7 +133,7 @@ a:hover{
         font-size:20px;
         color:white;
         padding:5px 05px;
-        margin-top:10px;
+        margin-top:05px;
       }
       
 
@@ -108,5 +141,16 @@ a:hover{
         visibility: visible;
         width:175px;
         height:155px;
+      }
+      .left{
+       top:17%;
+       font-size:25px;   
+      }
+      
+      .right{
+        top:17%;
+        font-size:25px;
+      }
+
+      .main-banner-wrap {margin:-10px -50px;}
     }
-}
