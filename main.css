@@ -59,7 +59,6 @@ a:hover{
   .slide-box {
     width: 100vw;
     float: left;
-    
   }
 
   .slide-box img {
@@ -101,6 +100,7 @@ a:hover{
         top:75%;
         left:35%;
         border-radius: 10px;
+        z-index: 5;
     }
     
     .navbar .nav_logo img{
@@ -118,6 +118,7 @@ a:hover{
     .nav_menu.show li{
         display: flex;
         color:black;
+        z-index: 5;
     }
      
     
@@ -142,15 +143,18 @@ a:hover{
         width:175px;
         height:155px;
       }
+
       .left{
        top:17%;
        font-size:25px;   
       }
       
+      .slide-box img{
+          height: 250px;
+      }
       .right{
         top:17%;
         font-size:25px;
       }
 
-      .main-banner-wrap {margin:-10px -50px;}
     }
