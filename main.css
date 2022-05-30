@@ -157,6 +157,9 @@ a:hover{
         margin-top:05px;
       }
       
+      .slide-box img {
+        width: 150%;
+    }
 
       .show{
         visibility: visible;
