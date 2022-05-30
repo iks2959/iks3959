@@ -53,9 +53,9 @@ a:hover{
 
 .slide-container {
     width: 300vw;
-    margin:10px auto;
     transition: all 1s;
   }
+  
   .slide-box {
     width: 100vw;
     float: left;
@@ -103,6 +103,7 @@ a:hover{
       color: green;
   }
   
+  .header-inner {margin-bottom: -200px !important;}
 @media screen and (max-width:768px) {
     .navbar{
         flex-direction: row;
