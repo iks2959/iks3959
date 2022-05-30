@@ -53,31 +53,56 @@ a:hover{
 
 .slide-container {
     width: 300vw;
+    margin:10px auto;
     transition: all 1s;
-    position:relative;
   }
   .slide-box {
     width: 100vw;
     float: left;
+    background-size: cover;
+    position: relative;
   }
 
   .slide-box img {
     width: 100%;
   } 
 
+.text {   
+  position:absolute;       
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size:5rem;
+  z-index: 1;
+  font-size:40px
+  }
+
   .left{
-    position:absolute;
-    top: 36%;
-    left: 5%;
+    position:absolute;  
+    top:50%;
+    left:15%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
     font-size:30px;
   }
 
   .right{
-      position: absolute;
-      top:36%;
-      right:5%;
+      position:absolute;  
+      top:50%;
+      right:15%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
       font-size: 30px;
   }
+  
+  .hope{
+      color:rgb(230, 116, 116);
+  }
+
+  .export{
+      color: green;
+  }
+  
 @media screen and (max-width:768px) {
     .navbar{
         flex-direction: row;
@@ -100,25 +125,20 @@ a:hover{
         top:75%;
         left:35%;
         border-radius: 10px;
-        z-index: 5;
+        z-index:1;
     }
     
-    .navbar .nav_logo img{
-        width:105px;
-        margin-bottom: 10px;
-      }
-
     .nav_menu li{
         display: none;
     }
     .nav_menu li a{
         color:black;
         padding: 0px 05px;
+        z-index:1;
     }
     .nav_menu.show li{
         display: flex;
         color:black;
-        z-index: 5;
     }
      
     
@@ -143,18 +163,31 @@ a:hover{
         width:175px;
         height:155px;
       }
-
       .left{
-       top:15%;
-       font-size:25px;   
-      }
-      
-      .slide-box img{
-          height: 180px;
-      }
-      .right{
-        top:15%;
-        font-size:25px;
-      }
+    position:absolute;  
+    top:50%;
+    left:15%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size:30px;
+  }
 
+  .right{
+      position:absolute;  
+      top:50%;
+      right:15%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      font-size: 30px;
+  }
+
+  .text {   
+    position:absolute;       
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size:5rem;
+    z-index: 1;
+    font-size:15px
+    }
     }
