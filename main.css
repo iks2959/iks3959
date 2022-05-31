@@ -110,11 +110,10 @@ a:hover{
       flex-direction: column;
       position:relative;
       width:100%;
-      height:800px;
-      border:1px solid red;
+      height:650px;
+      background-color: bisque;
   }
   
-   
   .profile{
     color: #585b60;
     font-family: "Montserrat", sans-serif;
@@ -129,18 +128,30 @@ a:hover{
     height:120px;
   }
 
-  .profile02{
-      display: flex;
-      flex-direction: row;
-      margin-left: 450px;
-  }
-
-  .profile02 img{
+  #slide img{
     border: 8px solid #fff;
     box-shadow: 0px 0px 30px rgb(0 0 0 / 20%);
-  }
+    border-radius: 50px;  
+    margin-left:100px;
+}
+  
+#slide {
+    position:relative;
+    width:100%;
+    height:400px;
+    margin-top: -25px;
+    overflow:hidden;
+}
+#slide > div {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
 
-  .pro ul li{
+
+.pro ul li{
     color: #444;
     font-size: 20px;
     font-weight: 600;
@@ -149,6 +160,30 @@ a:hover{
     letter-spacing: 0px;
     padding: 20px 0;
   }
+
+  
+  .main {
+    position:relative;  
+    display: flex;  
+    width:1100px;
+    height:400px;
+    margin-left: 400px;
+}
+
+  .pro{
+    position:absolute;
+    margin-right:150px;
+    width:850px;
+}
+  
+.sobu{
+    margin-top:30px;
+}
+
+.sinobe img{
+    width: 300px;
+    height: 400px;
+}
   @media screen and (max-width:768px) {
     html,body{
         width:100%;
@@ -254,7 +289,6 @@ a:hover{
         position:relative;
         width:100%;
         height:1000px;
-        border:1px solid red;
     }
 
     .profile{
@@ -265,33 +299,57 @@ a:hover{
         letter-spacing: 1px;
         line-height: 1;
         margin-top: 40px;
-        margin-left: 70px;
+        margin-left: 150px;
         padding: 0 10px;
         position: relative;
         height:120px;
       }
     
-      .profile02{
-          display: flex;
-          flex-direction: column;
-          margin-left:70px;
-      }
-    
-      .profile02 img{
-        margin-top: 0px;  
+      #slide img{
         border: 8px solid #fff;
         box-shadow: 0px 0px 30px rgb(0 0 0 / 20%);
-        width:60%;
-      }
+        border-radius: 50px;  
+        margin-left:80px;
+    }
     
-      .pro ul li{
+    .pro ul li{
         color: #444;
         font-size: 20px;
         font-weight: 600;
-        margin-top:20px;
-        margin-left: -10px;
+        margin-left: 20px;
         line-height: 20px;
         letter-spacing: 0px;
-        padding: 10px 0;
+        padding: 20px 0;
+        
       }
+
+      #slide {
+        position:relative;
+        width:100%;
+        height:400px;
+        margin-top: 0px;
+        overflow:hidden;
+    }
+
+    #slide > div {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
+    
+    .main {
+        display: flex;  
+        flex-direction: column;
+        width: 100%;
+        height:400px;
+        margin-left: 0px;
+    }
+
+    .pro{
+        margin-top:400px;
+        margin-left:80px;
+        width:318px;
+    }
     }
