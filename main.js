@@ -25,13 +25,3 @@ document.querySelector('.navbar_togleBtn').addEventListener('click',function(){
       슬라이드 -= 1
     }
   })
-
-  $('#slide3>ul>li').hide();
-$('#slide3>ul>li:first-child').show();
-
-setInterval(function(){
-    $('#slide3>ul>li:first-child').fadeOut()
-    .next().fadeIn().end(1000)
-    .appendTo('#slide3>ul');
-},3000);
-출처: https://sudal89.tistory.com/47 [가을밤에 내리는 비:티스토리]
