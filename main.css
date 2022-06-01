@@ -8,9 +8,9 @@ a {
     text-decoration: none;
     color:white;
 }
+
 header{
     width:100%;
-    background-color:rgb(172, 161, 163);
 }
 
 .navbar{
@@ -19,6 +19,7 @@ header{
     align-items: center;
     padding:18px 12px;
     height:100px;
+    background-color:rgb(172, 161, 163);
 }
 
 .navbar .nav_logo img{
@@ -105,103 +106,96 @@ a:hover{
       color: green;
   }
   
-  section{
-      display: flex;
-      flex-direction: column;
-      position:relative;
-      width:100%;
-      height:650px;
-      background-color: bisque;
+  section {
+    display: flex;
+    flex-direction: column;
+    height:600px;
+    background-color: bisque;
   }
-  
-  .profile{
+  .content{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    margin-top:50px;
+   }
+  .flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    }
+
+    #slide{
+    position:relative;
+    width:100%;
+    height:400px;
+    margin-top: 36px;
+    }
+    
+    #slide > div {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
+    
+    #slide img{
+        border: 8px solid #fff;
+        box-shadow: 0px 0px 30px rgb(0 0 0 / 20%);
+        border-radius: 50px;  
+    }
+   .item{
+    min-height: 200px;
+    flex-basis: 150px;
+    flex-grow: 1;
+   }
+
+   .item img{
+    width:300px;
+    height: 400px;
+   }
+
+   .jeonju img{
+    width: 400px;
+    height:300px;
+    margin-top: 20px;
+    margin-left:-110px;
+}
+
+   
+   .flexbox .item{
+    flex-basis: auto;
+    background-color: #ffe;
+
+}
+
+ .profile {
     color: #585b60;
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 1px;
     line-height: 1;
-    margin-top: 40px;
-    margin-left: 350px;
+    margin-top: 0px;
+    margin-left: -350px;
     padding: 0 10px;
-    height:120px;
-  }
-
-  #slide img{
-    border: 8px solid #fff;
-    box-shadow: 0px 0px 30px rgb(0 0 0 / 20%);
-    border-radius: 50px;  
-    margin-left:350px;
-}
-  
-#slide {
-    position:relative;
-    width:100%;
-    height:400px;
-    margin-top: -25px;
-    overflow:hidden;
-}
-#slide > div {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-}
-
-
-.pro ul li{
+ }
+ 
+ .pro {
+     margin-left:200px;
+     margin-top:40px;
+ }
+ .pro ul li{
     color: #444;
     font-size: 20px;
     font-weight: 600;
-    margin-left: 600px;
+    margin-left: 150px;
     line-height: 20px;
     letter-spacing: 0px;
     padding: 20px 0;
-  }
-
-  
-  .main {  
-    display: flex;  
-    width:100%;
-}
-
-  .pro{
-    position:absolute;
-    margin-top:180px;
-    margin-left:100px;
-    width:850px;
-}
-  
-.sobu{
-    margin-top:30px;
-}
-
-.sinobe img{
-    width: 300px;
-    height: 400px;
-}
-
-.tiboli img{
     width:300px;
-    height:400px;
-}
-
-.mirror img{
-    width:300px;
-    height: 400px;
-}
-
-.paperflower img{
-    width: 300px;
-    height: 400px;
-}
-
-.jeonju img{
-    width: 400px;
-    height:300px;
-    margin-top: 50px;
-}
+ }
+ 
   @media screen and (max-width:790px) {
     html,body{
         width:100%;
@@ -300,70 +294,41 @@ a:hover{
     z-index: 1;
     font-size:15px
     }
-
+    
     section{
-        display: flex;
-        flex-direction: column;
-        position:relative;
         width:100%;
-        height:1200px;
+        height:1000px;
     }
-
-    .profile{
+    .profile {
         color: #585b60;
         font-family: "Montserrat", sans-serif;
         font-size: 40px;
         font-weight: 700;
         letter-spacing: 1px;
         line-height: 1;
-        margin-top: 40px;
-        margin-left: 10px;
+        margin-top: 0px;
+        margin-left: -180px;
         padding: 0 10px;
-        height:120px;
-      }
+     }
     
-      #slide img{
+    #slide{
+        margin-left:00px;
+    }
+    
+    .content{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .pro {
+        margin-left:-150px;
+        margin-top:40px;
+    }
+
+    #slide img{
         border: 8px solid #fff;
         box-shadow: 0px 0px 30px rgb(0 0 0 / 20%);
         border-radius: 50px;  
-        margin-left:10px;
+        margin-left: -20px;
     }
-    
-    .pro{
-        margin-top: 600px;
-        margin-left:-120px;
-        width:550px;
-    }
-    .pro ul li{
-        color: #444;
-        font-size: 20px;
-        font-weight: 600;
-        margin-left: 130px;
-        line-height: 20px;
-        letter-spacing: 0px;
-        padding: 20px 0;
-        
-      }
-
-    .jeonju img{
-        width: 400px;
-        height:300px;
-    }
-
-    #slide {
-     width:100%;
-     height:400px;
-     margin-top: 0px;
-     overflow:hidden;
-    }
-
-    #slide > div {
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-    }
-    
-    
-    
     }
