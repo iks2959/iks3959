@@ -109,7 +109,7 @@ a:hover{
   section {
     display: flex;
     flex-direction: column;
-    height:600px;
+    height:650px;
     background-color: bisque;
   }
   .content{
@@ -129,6 +129,7 @@ a:hover{
     width:100%;
     height:400px;
     margin-top: 36px;
+    margin-left:100px;
     }
     
     #slide > div {
@@ -177,12 +178,12 @@ a:hover{
     letter-spacing: 1px;
     line-height: 1;
     margin-top: 0px;
-    margin-left: -350px;
+    margin-left: -400px;
     padding: 0 10px;
  }
  
  .pro {
-     margin-left:200px;
+     margin-left:250px;
      margin-top:40px;
  }
  .pro ul li{
