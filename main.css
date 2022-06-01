@@ -331,4 +331,9 @@ a:hover{
         border-radius: 50px;  
         margin-left: -20px;
     }
+
+    .jeonju img{
+        width: 380px;
+        height:280px;
+    }
     }
