@@ -1,6 +1,6 @@
 body{
     margin:0; padding:0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Black Han Sans', sans-serif;
 }
 
 
@@ -172,7 +172,7 @@ a:hover{
 
  .profile {
     color: #585b60;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Black Han Sans', sans-serif;
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -189,7 +189,7 @@ a:hover{
  .pro ul li{
     color: #444;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     margin-left: 150px;
     line-height: 20px;
     letter-spacing: 0px;
