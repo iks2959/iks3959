@@ -211,7 +211,8 @@ a:hover{
  .stek h1{
   color: #585b60;
   margin-top:55px;
-  font-size: 45px;
+  margin-left: 20px;
+  font-size: 40px;
  }
 
  .stek_01{
@@ -375,6 +376,7 @@ a:hover{
       height:900px;
     }
     .stek h1{
+      font-size:40px;
       margin-left:100px;
     }
     
@@ -382,4 +384,19 @@ a:hover{
       margin-left:50px;
     }
 
+    }
+
+    @media screen and (max-width:520px){
+      .skil{
+        height:750px;
+      }
+      
+      .skil h1{
+        font-size:40px;
+        margin-left: 70px;
+      }
+      .stek_01 img{
+        width:150px;
+        height:150px;
+      }
     }
