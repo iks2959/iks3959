@@ -386,7 +386,14 @@ a:hover{
 
     }
 
-    @media screen and (max-width:520px){
+    @media screen and (max-width:500px){
+      
+      .navbar .nav_logo img{
+        width:100px;
+        border:1px solid blue;
+        margin-top: -40px;
+      }
+      
       .skil{
         height:750px;
       }
@@ -396,7 +403,7 @@ a:hover{
         margin-left: 70px;
       }
       .stek_01 img{
-        width:150px;
-        height:150px;
+        width:125px;
+        height:125px;
       }
     }
