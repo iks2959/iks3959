@@ -243,8 +243,8 @@ a:hover{
     }
     
     .navbar{
+        display: flex;
         flex-direction: row;
-        position:relative;
     }
 
     
@@ -285,12 +285,7 @@ a:hover{
       font-size:20px;
     }
 
-    .nav_sns i{
-        font-size:20px;
-        color:white;
-        padding:5px 05px;
-        margin-top:05px;
-      }
+  
       .slide-container {
         width: 300vw;
         transition: all 1s;
